@@ -1,9 +1,15 @@
 vote-system/
 │
 ├── app/
+|   │
+|   ├── config/
+|   |    ├── helpers.php
+│   |    └── config.php
+│   |
 │   ├── controllers/
 │   │   ├── VoteController.php
-│   │   └── HomeController.php
+│   │   ├── HomeController.php
+|   |   └── AuthController.php
 │   │
 │   ├── models/
 │   │   ├── Vote.php
@@ -14,8 +20,13 @@ vote-system/
 │   │   │   ├── header.php
 │   │   │   └── footer.php
 │   │   │
-│   │   ├── home/
-│   │   │   └── index.php
+│   │   ├── home.php
+│   │   │
+|   |   ├── error.php
+|   |   |
+|   |   ├── login.php
+|   |   |
+|   |   ├── register.php
 │   │   │
 │   │   ├── vote/
 │   │   │   ├── index.php
@@ -28,17 +39,32 @@ vote-system/
 │   │   ├── Model.php
 │   │   ├── View.php
 │   │   └── Database.php
-│
-├── public/
-│   ├── index.php
-│   └── assets/
-│       ├── css/
-│       ├── js/
-│       └── images/
-│
-├── config/
-│   └── config.php
-│
+│   |
+|   ├── database/
+|   |   |
+|   |   └── db.sql
+|   |
+|   ├── email/
+|   |   |
+|   |   └── EmailService.php
+|   |
+|   ├── libs/
+|   |   |
+|   |   ├── fpdf/
+|   |   └── PdfGenerator.php
+|   |
+|   ├── public/
+|       ├── verify.php 
+|       ├── autoload.php
+│       ├── index.php
+│       └── assets/
+│           ├── css/
+|           |   └── style.css
+│           ├── js/
+|           |   └── script.js
+│           └── images/
+|               |....
+|
 ├── .htaccess
-├── composer.json
+├── structure.txt
 └── README.md
