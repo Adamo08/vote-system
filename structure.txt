@@ -1,0 +1,44 @@
+vote-system/
+│
+├── app/
+│   ├── controllers/
+│   │   ├── VoteController.php
+│   │   └── HomeController.php
+│   │
+│   ├── models/
+│   │   ├── Vote.php
+│   │   └── User.php
+│   │
+│   ├── views/
+│   │   ├── inc/
+│   │   │   ├── header.php
+│   │   │   └── footer.php
+│   │   │
+│   │   ├── home/
+│   │   │   └── index.php
+│   │   │
+│   │   ├── vote/
+│   │   │   ├── index.php
+│   │   │   └── result.php
+│   │
+│   ├── core/
+|   |   |
+|   |   ├── App.php
+│   │   ├── Controller.php
+│   │   ├── Model.php
+│   │   ├── View.php
+│   │   └── Database.php
+│
+├── public/
+│   ├── index.php
+│   └── assets/
+│       ├── css/
+│       ├── js/
+│       └── images/
+│
+├── config/
+│   └── config.php
+│
+├── .htaccess
+├── composer.json
+└── README.md
