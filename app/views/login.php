@@ -76,9 +76,6 @@
                         </div>
                         <p class="mb-0">Don't have an account? <a href="<?php  url('auth/signup')?>" class="text-info">Register here</a></p>
                     </form>
-                    <form action="<?php url('home/generateComplexPdf')?>" method="POST">
-                        <input type="submit" class="btn btn-success" value="Generate PDF" name="generate">
-                    </form>
                 </div>
                 <div class="col-sm-6 d-none d-sm-block">
                     <img 
