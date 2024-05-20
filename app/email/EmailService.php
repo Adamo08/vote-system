@@ -1,17 +1,5 @@
 <?php
 
-// class EmailService {
-//     public function sendVerificationEmail($to, $link) {
-//         $subject =  'Email Verification';
-//         $message =  "Click the following link to verify your email: $link";
-//         $headers =  'From: elaaddamomar13@gmail.com' . "\r\n" .
-//                     'Reply-To: elaaddamomar13@gmail.com' . "\r\n" .
-//                     'X-Mailer: PHP/' . phpversion();
-
-//         mail($to, $subject, $message, $headers);
-//     }
-// }
-
 class EmailService {
     public function sendVerificationEmail($to, $link) {
         $subject = 'Email Verification';

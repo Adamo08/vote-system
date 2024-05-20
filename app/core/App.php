@@ -38,7 +38,9 @@ class App
             // define method 
             $this->action = isset($url[1]) ? $url[1]:"index";
 
-
+            // echo "<pre>";
+            // print_r($url);
+            // echo "</pre>";
             // define parameters 
             unset($url[0],$url[1]);
 
