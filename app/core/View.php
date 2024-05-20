@@ -2,6 +2,7 @@
 
 
 
+
 class View 
 {
     protected $view_file;
