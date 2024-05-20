@@ -13,6 +13,7 @@ vote-system/
 │   │
 │   ├── models/
 │   │   ├── Vote.php
+|   |   ├── Condidat.php
 │   │   └── User.php
 │   │
 │   ├── views/
@@ -30,7 +31,7 @@ vote-system/
 │   │   │
 │   │   ├── vote/
 │   │   │   ├── index.php
-│   │   │   └── result.php
+│   │   │   └── recap.php
 │   │
 │   ├── core/
 |   |   |
