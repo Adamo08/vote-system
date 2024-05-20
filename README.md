@@ -20,7 +20,7 @@ A simple voting system project built with PHP.
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/vote-system.git
+    git clone https://github.com/Adamo08/vote-system.git
     cd vote-system
     ```
 
