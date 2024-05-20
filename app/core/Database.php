@@ -1,5 +1,6 @@
 <?php
 
+
 class Database {
     private $host = HOST;
     private $db_name = DATABSE_NAME;
