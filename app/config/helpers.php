@@ -11,3 +11,7 @@
     {
         return  SITE_NAME.$url;
     }
+
+    function getCurrentDate() {
+        return date("l j F Y"); 
+    }

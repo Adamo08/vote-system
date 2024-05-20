@@ -27,10 +27,7 @@
                             <a class="nav-link" href="<?php url('')?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php url('vote/index')?>">Vote</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php url('vote/result')?>">Results</a>
+                                <a class="btn btn-danger" href="<?php url('auth/logout')?>">logout</a>
                         </li>
                     </ul>
                 </div>

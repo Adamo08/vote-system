@@ -14,7 +14,7 @@
     define("HOST","localhost:4306");
     define("USERNAME", "root");
     define("PASSWORD", "");
-    define("DATABSE_NAME","vote_system");
+    define("DATABSE_NAME","voting_system");
 
 
 

@@ -11,28 +11,23 @@ class HomeController extends Controller
     }
 
     
-    public function generatePdf() {
-        if (isset($_POST['generate'])){
+    // A function to generate a pdf
+    public function generatePdf($id) {
             $pdf = new PdfGenerator();
-            $content = "Hello, World! This is a PDF document.";
-
-            // Generate and output the PDF
-            $pdf->generate($content);
-        }
-    }
-
-    public function generateComplexPdf() {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-            $pdf = new PdfGenerator();
+            $vote = new Vote();
+            $User = new User();
+            $info = $User ->getUserByID($id);
+            $condidat = new Condidat();
             $data = [
-                "Introduction" => "This is the introduction section.",
-                "Main Content" => "Here is the main content of the document.",
-                "Conclusion" => "This is the conclusion of the document."
+                "condidats" => $condidat->getAllCondidats(),
+                "condidats_by_user" => $vote->getVotedCondidats($id),
+                "vote_date" => $vote->getVotedDate($id),
+                "current_date" => getCurrentDate(),
+                "user" => $info['fname']." ".$info['lname'],
             ];
 
             // Generate and output the PDF with complex content
-            $pdf->generateComplex($data);
-        }
+            $pdf->generateComplex($data,$info['fname']."_".$info['lname']);
     }
     
 }

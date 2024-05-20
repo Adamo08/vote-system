@@ -2,22 +2,13 @@
 
     <?php  include(VIEWS.'inc'.DS.'header.php'); ?>
 
-    <div class="container">
-        <h1>Hello From Home</h1>
-        <form action="">
-            <div class="form-div">
-                <label for="fname" class="form-label">Prenom</label>
-                <input type="text" id="fname" name="fname" placeholder="First Name ....">
-            </div>
-            <div class="form-div">
-                <label for="" class="form-label">Nom</label>
-                <input type="text" id="lname" name="lname" placeholder="Last Name ....">
-            </div>
-            <div class="form-div">
-                <label for="mdp" class="form-label">Password</label>
-                <input type="text" id="mdp" name="mdp" placeholder="Password ....">
-            </div>
-        </form>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="text-center p-5 bg-white shadow rounded">
+            <h1 class="mb-4">Bienvenu Dans Le Systeme De Vote</h1>
+            <p class="mb-4">Veuillez vous inscrire ou vous connecter pour participer au vote</p>
+            <a href="<?php url('auth/index')?>" class="btn btn-primary">Se connecter</a>
+            <a href="<?php url('auth/signup')?>" class="btn btn-primary mr-4">S'inscrire</a>
+        </div>
     </div>
 
     <?php  include(VIEWS.'inc'.DS.'footer.php'); ?>

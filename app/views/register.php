@@ -54,10 +54,6 @@
                         </div>
                         <h2 class="fw-normal mb-3 fw-bolder">Register</h2>
                         <div class="mb-2">
-                            <label for="form2Example08" class="form-label">CNE</label>
-                            <input type="text" id="form2Example08" name="cne" class="form-control form-control-lg" />
-                        </div>
-                        <div class="mb-2">
                             <label for="form2Example09" class="form-label">First Name</label>
                             <input type="text" id="form2Example09" name="fname" class="form-control form-control-lg" />
                         </div>
@@ -68,6 +64,10 @@
                         <div class="mb-2">
                             <label for="form2Example18" class="form-label">Email address</label>
                             <input type="email" id="form2Example18" name="email" class="form-control form-control-lg" />
+                        </div>
+                        <div class="mb-2">
+                            <label for="form2Example18" class="form-label">UserName</label>
+                            <input type="text" id="form2Example18" name="username" class="form-control form-control-lg" />
                         </div>
                         <div class="mb-2">
                             <label for="form2Example28" class="form-label">Password</label>

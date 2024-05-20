@@ -30,7 +30,9 @@ class AuthController extends Controller {
                 if ($userData['status'] === 'verified') {
                     session_start();
                     $_SESSION['user'] = $userData;
+                    $_SESSION['user_id'] = $userData['id'];
                     header("Location: " .SITE_NAME."vote/index");
+                    // $this->view('vote/index');
                     exit;
                 } else {
                     $data = ["failed" => "Your email is not verified. Please check your email for the verification link."];
@@ -45,22 +47,22 @@ class AuthController extends Controller {
 
     public function register() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $cne = $_POST['cne'];
             $fname = $_POST['fname'];
             $lname = $_POST['lname'];
             $email = $_POST['email'];
+            $username = $_POST['username'];
             $password = $_POST['password'];
             $verificationCode = bin2hex(random_bytes(16));
 
             $user = new User();
 
-            if ($user->createUser($cne, $fname, $lname, $email, $password, $verificationCode)) {
+            if ($user->createUser($fname, $lname, $email,$username, $password, $verificationCode)) {
                 $verificationLink = SITE_NAME."verify.php?code=$verificationCode";
                 $this->emailService->sendVerificationEmail($email, $verificationLink);
                 $data = ["success" => "Registration successful. A verification email has been sent to your email address."];
                 $this->view('register', $data);
             } else {
-                $data = ["error" => "Registration failed. CNE or email might already be taken."];
+                $data = ["error" => "Registration failed.email might already be taken."];
                 $this->view('register', $data);
             }
         }
@@ -81,4 +83,16 @@ class AuthController extends Controller {
             echo 'Invalid or expired verification link.';
         }
     }
+
+
+    /**
+     * Function to logout
+    */
+
+    public function logout(){
+        session_start();
+        session_destroy();
+        $this->view('login');
+    }
+
 }
