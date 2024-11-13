@@ -52,20 +52,19 @@ vote-system/
 |   ├── libs/
 |   |   |
 |   |   ├── fpdf/
-|   |   └── PdfGenerator.php
-|   |
-|   ├── public/
+|       └── PdfGenerator.php
+|
+|── public/
 |       ├── verify.php 
 |       ├── autoload.php
 │       ├── index.php
 │       └── assets/
-│           ├── css/
-|           |   └── style.css
-│           ├── js/
-|           |   └── script.js
-│           └── images/
-|               |....
-|
-├── .htaccess
+│       |    ├── css/
+|       |    |   └── style.css
+│       |    ├── js/
+|       |    |   └── script.js
+│       |    └── images/
+|       |        |....
+|       |__ .htaccess
 ├── structure.txt
 └── README.md
