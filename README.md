@@ -19,22 +19,25 @@ A simple voting system project built with PHP.
 ## Installation
 
 1. **Clone the repository:**
+   
     ```bash
-    git clone https://github.com/your-username/vote-system.git
+    git clone https://github.com/Adamo08/vote-system.git
+    ```
+    ```bash
     cd vote-system
     ```
 
-2. **Set up the database:**
+3. **Set up the database:**
 
     - Create a database in MySQL.
     - Import the SQL schema to set up the necessary tables.
     - Update the database configuration in the project to match your database settings.
 
-3. **Configure your environment:**
+4. **Configure your environment:**
 
     - Make sure to set up your environment variables or configuration files, such as database credentials and site URL.
 
-4. **Run the project:**
+5. **Run the project:**
 
     - Place the project in your web server’s root directory.
     - Access the project via your web browser using the appropriate URL (e.g., `http://localhost/vote-system/public`).

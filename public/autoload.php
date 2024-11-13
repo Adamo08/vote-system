@@ -21,7 +21,6 @@ require_once(CONFIG.'helpers.php');
 
 
 
-
 // autoload all classes 
 $modules = [ROOT_PATH,APP,CORE,EMAIL,LIBS,FPDF,VIEWS,CONTROLLERS,MODELS,CONFIG,PUBL,ASSETS,IMAGES,UPLOADS];
 set_include_path(get_include_path(). PATH_SEPARATOR.implode(PATH_SEPARATOR,$modules));

@@ -28,3 +28,4 @@ class EmailService {
         mail($to, $subject, $message, $headers);
     }
 }
+
